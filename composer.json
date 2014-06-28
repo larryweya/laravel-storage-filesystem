@@ -1,0 +1,23 @@
+{
+    "name": "larryweya/laravel-storage-filesystem",
+    "homepage": "http://github.com/larryweya/laravel-storage-filesystem",
+    "description": "A laravel filesystem storage implementation",
+    "keywords": ["laravel","laravel 4","storage","filesystem",""],
+    "type":"library",
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Larry Weya",
+            "homepage":"http://github.com/larryweya/laravel-storage-filesystem"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": { "Laravel\\Storage": "src/" }
+    }
+}
