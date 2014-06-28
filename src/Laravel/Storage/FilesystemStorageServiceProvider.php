@@ -18,7 +18,12 @@ class FilesystemStorageServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-        $this->app->bindShared('storage', function() { return new FilesystemStorage; });
+        $this->app->bindShared('storage', function() {
+            return new FilesystemStorage(
+                $this->app['files'],
+                $this->app['config']->get('storage.upload_dir'),
+                $this->app['config']->get('storage.upload_root_url'));
+        });
     }
 
     /**
